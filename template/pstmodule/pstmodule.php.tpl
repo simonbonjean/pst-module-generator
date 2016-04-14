@@ -3,6 +3,12 @@
 if (!defined('_PS_VERSION_'))
     exit;
 
+
+if (!class_exists('PstModule', true))
+{
+    include _PS_MODULE_DIR_. 'pst/autoload_patcher.php';
+}
+
 class {$module_name} extends PstModule {
 {if !$has_configuration}
     protected $_config = array(
