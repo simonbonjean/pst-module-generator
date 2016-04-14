@@ -1,0 +1,71 @@
+html body .configFieldsContainer .configFieldItem,
+html body .fieldsContainer .fieldItem {
+    margin: 0 !important;
+    padding: 0 !important;;
+
+}
+.configFieldItem .type,
+.fieldItem .type{
+    width: 115px;
+    display: inline-block;
+    text-transform: lowercase;
+}
+.configuration,
+.hooks,
+.entities{
+    border: 5px solid #D2D2D2;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.fieldsetContainer,
+.entitiesContainer{
+    border: 1px solid #D2D2D2;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 8px;
+}
+.addFieldConfigContainer,
+.addFieldContainer{
+    max-width: 250px;
+}
+.addFieldConfigContainer,
+.addFieldContainer,
+.fieldsetItem,
+.entityItem{
+    border: 1px solid #D2D2D2;
+    padding: 18px;
+    margin: 15px;
+    border-radius: 5px;
+}
+.configFieldItem h3,
+.fieldItem h3{
+    text-transform: none;
+}
+.bootstrap .form-horizontal label[for='entities'],
+.bootstrap .form-horizontal label[for='hooks'],
+.bootstrap .form-horizontal label[for='configuration']
+{
+    font-weight: bold;
+    font-size: 25px;
+}
+input[name=fieldConfigNameLive],
+input[name=fieldNameLive]{
+    float: right;
+    width: 47% !important;
+}
+.hooks .checkbox:last-child{
+    clear: both;
+}
+.bootstrap .form-horizontal .hooks .checkbox{
+    border: 1px solid #D2D2D2;
+    padding-bottom: 15px;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    float: left;
+    width: 32%;
+}
+.clear{
+    clear: both;
+}

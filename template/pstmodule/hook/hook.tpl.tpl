@@ -1,0 +1,2 @@
+{if isset($superblock) && !empty($superblock)}{ldelim}superblock key='{$superblock|replace:' ':'-'|lower}'{rdelim}{/if}
+{if isset($menu) && !empty($menu)}{ldelim}menu key="{$menu|replace:' ':'-'|lower}"{rdelim}{/if}
