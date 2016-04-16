@@ -3,7 +3,7 @@
 * Scaffolding quicly complexe module
 
 ## Hook 
-Hook whatever you or direct link to a record of [superblock](http://prestasupertool.com/en/3-superblock.html) or [menu manager](http://prestasupertool.com/en/4-menu-manager-.html) module
+Hook whatever you want or direct link to a record of [superblock](http://prestasupertool.com/en/3-superblock.html) or [menu manager](http://prestasupertool.com/en/4-menu-manager-.html) module
 
 ## Complex Entities generator
 Entity can have this behavior :
