@@ -10,7 +10,7 @@ class PstGenerator extends PstModule {
     {
         $this->name = 'pstgenerator';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.3';
+        $this->version = '1.0.4';
 
         $this->_admin_class = "AdminModuleGenerator";
         parent::__construct();
