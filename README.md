@@ -1,12 +1,18 @@
 # Prestshop Module Generator
+* Quick scaffold a complexe module
 
-* Scaffolding quicly complexe module
+## Installing :
 
-## Hook 
+* Download and install [https://github.com/simonbonjean/pst](pst) module (dependency) 
+* Download and install pstgenerator module
+
+
+## Functionnality : 
+### Hook 
 Hook whatever you want or direct link to a record of [superblock](http://prestasupertool.com/en/3-superblock.html) or [menu manager](http://prestasupertool.com/en/4-menu-manager-.html) module
 
-## Complex Entities generator
-Entity can have this behavior :
+### Complex Entities generator
+**Entity can have this behavior :**
 * Sortable 
 * Activable 
 * Linkable Entity (like item in [menu manager](http://prestasupertool.com/en/4-menu-manager-.html)) 
@@ -14,20 +20,19 @@ Entity can have this behavior :
 * Created at field automaticly set
 
 
-Fields can have this types : 
+**Fields can have this types :** 
 * Picture 
-* Relational link
+* Relational link (many to many)
 * Rich text
 * Date
 * DateTime
 * Boolean
-
-
+* And more
 
 ### Fixture 
 * Fix you entity data and rebuild it [fixture module]()
 
-## Backup
+### Backup
 * Automatic Back up you old version
 
 
