@@ -187,7 +187,6 @@ class {$entity_model}Core extends {if $sortable_flat}PstFlatSortObjectModel{else
             $html .= '</label>';
             $html .= '</div>';
         }
-
         return $html;
     }
 
@@ -199,9 +198,7 @@ class {$entity_model}Core extends {if $sortable_flat}PstFlatSortObjectModel{else
             $html .= '<option value="'.$item['id'].'"'.(($id_selected == $item['id']) ? ' selected="selected"' : '').'>';
             $html .= isset($item['level_depth'])?(str_repeat('&nbsp;', $item['level_depth'] * 5)):'';
             $html .= stripslashes($item['value']).'</option>';
-
         }
-
         return $html;
     }
 {/if}

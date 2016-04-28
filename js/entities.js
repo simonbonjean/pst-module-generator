@@ -67,9 +67,9 @@ var displayHtmlFieldForm = function(isRequired,fieldType,fieldName,entity){
     element += '<h3>' + close;
     element += '<input type=checkbox name="required"' + (isRequired?'checked=checked':'') + ' />'
     element += '<span class="type">' + fieldType + '</span>';
-    element += '<input type="text" name="fieldNameLive" value="' + fieldName+ '" /></h3>';
+    element += '<input type="text" class="field-name-live" name="fieldNameLive" value="' + fieldName+ '" />';
     element += '<div class="clear"></div>';
-    element += '</div>';
+    element += '</h3></div>';
     return element;
 }
 /**

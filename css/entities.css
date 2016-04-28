@@ -52,7 +52,7 @@ html body .fieldsContainer .fieldItem {
 input[name=fieldConfigNameLive],
 input[name=fieldNameLive]{
     float: right;
-    width: 47% !important;
+    width: 46% !important;
 }
 .hooks .checkbox:last-child{
     clear: both;

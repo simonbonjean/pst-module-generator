@@ -56,7 +56,7 @@ class ModuleStructCore extends ObjectModel{
             'main_menu'             => array('type' => self::TYPE_STRING, 'lang' => false,'validate' => 'isString','required'=>false,'size' => 255),
             'backup'                => array('type' => self::TYPE_BOOL, 'validate' => 'isBool'),
             'has_css'               => array('type' => self::TYPE_BOOL, 'validate' => 'isBool'),
-            'has_sass'               => array('type' => self::TYPE_BOOL, 'validate' => 'isBool'),
+            'has_sass'              => array('type' => self::TYPE_BOOL, 'validate' => 'isBool'),
             'has_js'                => array('type' => self::TYPE_BOOL, 'validate' => 'isBool'),
             'db_uninstall'          => array('type' => self::TYPE_BOOL, 'validate' => 'isBool'),
             'hook_list'             => array('type' => self::TYPE_HTML, 'lang' => false,'validate' => 'isString','required'=>false),

@@ -406,7 +406,7 @@ class Admin{$entity_model}Controller extends PstAdminController
 {if $field.type =='many_entity'}
         if({$field.entity}::isTree())
         {
-            $items = {$field.entity}::getList($this->context->language->id{if $field.required},true{/if});
+            $items = {$field.entity}::getList($this->context->language->id, true);
             $selected_items = array();
             if(isset($this->object->id))
             {
@@ -423,7 +423,7 @@ class Admin{$entity_model}Controller extends PstAdminController
                 $this->fields_value['{$field.name}_' .$id] = boolval($item);
             $current['type'] = 'checkbox';
             $current['values'] = array(
-                    'query' => {$field.entity}::getList($this->context->language->id{if $field.required},true{/if}),
+                    'query' => {$field.entity}::getList($this->context->language->id, true),
                     'id' => 'id',
                     'name' => 'name'
             );

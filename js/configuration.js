@@ -57,11 +57,9 @@ var displayHtmlConfigFieldForm = function(isRequired,configFieldType,configField
     element += '<h3>' + close;
     element += '<input type=checkbox name="configRequired"' + (isRequired?'checked=checked':'') + ' />'
     element += '<span class="type">' + configFieldType + '</span>';
-    element += '<input type="text" name="fieldConfigNameLive" value="' + configFieldName+ '" /></h3>';
+    element += '<input type="text" name="fieldConfigNameLive" value="' + configFieldName+ '" />';
     element += '<div class="clear"></div>';
-
-
-    element += '</div>';
+    element += '</h3></div>';
     return element;
 }
 /**
