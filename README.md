@@ -20,10 +20,14 @@ Module configuration can have a variable number Fieldset with a varible number o
 ### Complex Entities generator
 **Entity can have this behavior :**
 * Sortable 
-* Activable 
+* Activable
+* Sluggable
 * Linkable Entity (like item in [menu manager](http://prestasupertool.com/en/4-menu-manager-.html)) 
 * Update at field automaticly set
 * Created at field automaticly set
+* front list controller
+* front detail controller
+* Auto find last fixture
 
 **Fields can have this types :** 
 * Picture 
@@ -39,7 +43,6 @@ Module configuration can have a variable number Fieldset with a varible number o
 
 ### Backup
 * Automatic Back up you old version
-
 
 More details on 
 http://prestasupertool.com/en/accueil/2-module-generator.html
