@@ -327,8 +327,7 @@ class Admin{$entity_model}Controller extends PstAdminController
 
         $fields = array(
             'legend' => array(
-                'title' => $this->l('{$front_name}'),
-                'image' => $this->getPictureModule()
+                'title' => $this->l('{$front_name}')
             ),
 
             'input' => array()
