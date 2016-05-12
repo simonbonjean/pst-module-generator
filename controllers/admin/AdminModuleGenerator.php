@@ -29,10 +29,8 @@ class AdminModuleGeneratorController extends PstAdminController
             'id_modulestruct' => array(
                 'title' => $this->l('ID'),
                 'align' => 'center',
-
-                'width' => 25
+                'class' => 'fixed-width-xs',
             ),
-
             'module_name' => array(
                 'title' => $this->l('module_name'),
                 'width' => 'auto',
@@ -51,10 +49,9 @@ class AdminModuleGeneratorController extends PstAdminController
                 'required' => true,
                 'lang' => false,
             ),
-
             'position' => array(
                 'title' => $this->l('Position'),
-                'width' => 40,
+                'width' => 30,
                 'filter_key' => 'a!position',
                 'position' => 'position'
             )
@@ -71,15 +68,25 @@ class AdminModuleGeneratorController extends PstAdminController
 
     }
 
+    public function initPageHeaderToolbar()
+    {
+        $this->initToolbar();
+        if(empty($this->display))
+            $this->page_header_toolbar_btn['new_modulestruct'] = array(
+                'href' => self::$currentIndex.'&addpst_modulestruct&token='.$this->token,
+                'desc' => $this->l('Add new Module', null, null, false),
+                'icon' => 'process-icon-new'
+            );
+
+        parent::initPageHeaderToolbar();
+    }
+
 
     public function renderList()
     {
         $this->addRowAction('edit');
         $this->addRowAction('delete');
-
         $this->_orderBy = 'position';
-
-
         return parent::renderList();
     }
 
