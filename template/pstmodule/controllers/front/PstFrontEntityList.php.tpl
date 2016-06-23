@@ -18,9 +18,11 @@ class {$module_name}{$entity_model}ListModuleFrontController extends ModuleFront
         $protocol_link = (Configuration::get('PS_SSL_ENABLED') || Tools::usingSecureMode()) ? 'https://' : 'http://';
 		$useSSL = ((isset($this->ssl) && $this->ssl && Configuration::get('PS_SSL_ENABLED')) || Tools::usingSecureMode()) ? true : false;
         $protocol_content = ($useSSL) ? 'https://' : 'http://';
+{if $front_controller_detail}
         $link = new {$module_name}Link($protocol_link, $protocol_content);
         $this->context->module_link = $link;
         $this->context->smarty->assign(array('module_link' => $link));
+{/if}
 
     }
     public function elementSort()
@@ -28,13 +30,11 @@ class {$module_name}{$entity_model}ListModuleFrontController extends ModuleFront
         $order_by_default = 0;
         $order_way_default = 0;
         $order_by_values = array();
-{if $option.sortable_nested || $option.sortable}
+{if $option.sortable_nested || $option.sortable_flat}
         $order_by_values[] = 'position';
-{/if}
-{if $option.date_add}
+{elseif $option.date_add}
         $order_by_values[] = 'date_add';
-{/if}
-{if $option.date_upd}
+{elseif $option.date_upd}
         $order_by_values[] = 'date_upd';
 {/if}
         $order_way_values = array(0 => 'asc', 1 => 'desc');

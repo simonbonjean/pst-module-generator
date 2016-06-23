@@ -22,9 +22,11 @@
     {/if}
     </div>
 {/foreach}
+{if $front_controller_detail}
     <a href="{ldelim}$module_link->get{$entity_model}Link($element.id_{$entity|lower}, $element.link_rewrite){rdelim}">
         {l s='Show'}
     </a>
+{/if}
     </div>
 {ldelim}/foreach{rdelim}
 </div>

@@ -636,12 +636,13 @@ class AdminModuleGeneratorController extends PstAdminController
 
             if ($options['front_controller_list']) {
                 $has_front_list = true;
+
                 $this->renderAndSaveFrontTemplate('list', $entity, $data);
                 $this->renderAndSaveClass('PstFrontEntityList.php', strtolower($entity) . 'list', 'controllers/front');
             }
 
             if ($options['front_controller_detail']) {
-                $has_front_detail_rewrite = isset($data['options']['link_rewrite']);
+
                 $this->renderAndSaveFrontTemplate('detail', $entity, $data);
                 $this->renderAndSaveClass('PstFrontEntityDetail.php', strtolower($entity) . 'detail', 'controllers/front');
             }
